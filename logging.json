@@ -1,0 +1,301 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "173.75.41.103",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T18:30:09.014847402Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.DeleteRepository",
+      "authorizationInfo": [
+        {
+          "resource": "projects/artifacttest/locations/us-central1/repositories/docker",
+          "permission": "artifactregistry.repositories.delete",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/artifacttest/locations/us-central1/repositories/docker",
+      "request": {
+        "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.DeleteRepositoryRequest",
+        "name": "projects/artifacttest/locations/us-central1/repositories/docker"
+      }
+    },
+    "insertId": "1o87eaqd1xek",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.DeleteRepository",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "artifacttest"
+      }
+    },
+    "timestamp": "2024-10-30T18:30:09.005276303Z",
+    "severity": "NOTICE",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/artifacttest/locations/us-central1/operations/a199ae0f-fd62-4960-a63f-272f64a79dc9",
+      "producer": "artifactregistry.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-10-30T18:30:10.055181471Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.DeleteRepository",
+      "resourceName": "projects/artifacttest/locations/us-central1/repositories/docker",
+      "response": {
+        "@type": "type.googleapis.com/google.protobuf.Any",
+        "value": {}
+      }
+    },
+    "insertId": "1547gm6ddu9p",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.DeleteRepository",
+        "project_id": "artifacttest"
+      }
+    },
+    "timestamp": "2024-10-30T18:30:09.187951825Z",
+    "severity": "NOTICE",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/artifacttest/locations/us-central1/operations/a199ae0f-fd62-4960-a63f-272f64a79dc9",
+      "producer": "artifactregistry.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-10-30T18:30:09.308996195Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.23.201.91",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.create invocation-id/dba5153519b447299d8a4773d2aa94a9 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T18:30:14.573120666Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "authorizationInfo": [
+        {
+          "resource": "projects/artifacttest/locations/us-central1",
+          "permission": "artifactregistry.repositories.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/artifacttest/locations/us-central1",
+      "request": {
+        "repository": {
+          "name": "projects/artifacttest/locations/us-central1/repositories/docker",
+          "format": "DOCKER"
+        },
+        "parent": "projects/artifacttest/locations/us-central1",
+        "repositoryId": "docker",
+        "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.CreateRepositoryRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      }
+    },
+    "insertId": "1pbl8spd28jd",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "artifacttest",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository"
+      }
+    },
+    "timestamp": "2024-10-30T18:30:14.562455137Z",
+    "severity": "NOTICE",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/artifacttest/locations/us-central1/operations/41d48f9b-cf5c-471c-87b0-293d55128dd0",
+      "producer": "artifactregistry.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-10-30T18:30:15.078878182Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "resourceName": "projects/artifacttest/locations/us-central1/repositories/docker",
+      "response": {
+        "name": "projects/artifacttest/locations/us-central1/repositories/docker",
+        "vulnerabilityScanningConfig": {
+          "lastEnableTime": "2024-10-30T18:30:14.585406562Z"
+        },
+        "mode": "STANDARD_REPOSITORY",
+        "sbomConfig": {},
+        "format": "DOCKER",
+        "@type": "type.googleapis.com/google.protobuf.Any"
+      }
+    },
+    "insertId": "utsuyxd57mk",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+        "project_id": "artifacttest"
+      }
+    },
+    "timestamp": "2024-10-30T18:30:15.145324933Z",
+    "severity": "NOTICE",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/artifacttest/locations/us-central1/operations/41d48f9b-cf5c-471c-87b0-293d55128dd0",
+      "producer": "artifactregistry.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-10-30T18:30:16.162279991Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com//attribute.repository/pitt-cs-1660/build-and-push-image-MasonGobat is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.23.201.91",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/dc44bbdb7c7940d69e7c3d95941190f3 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T18:33:29.746578289Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/artifacttest/locations/us-central1/repositories/docker",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/artifacttest/locations/us-central1/repositories/docker",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/artifacttest/locations/us-central1/repositories/docker"
+      }
+    },
+    "insertId": "4qxrshd28e0",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "artifacttest",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-10-30T18:33:29.735846265Z",
+    "severity": "ERROR",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-10-30T18:33:29.969870491Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "masongobat@gmail.com",
+        "principalSubject": "user:masongobat@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.23.201.91",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/615775c1cc68422c9a2043fa2d8a4997 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T18:34:21.844608565Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/artifacttest/locations/us-central1/repositories/docker",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/artifacttest/locations/us-central1/repositories/docker",
+      "request": {
+        "resource": "projects/artifacttest/locations/us-central1/repositories/docker",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "9rx1fnd2b9t",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "artifacttest"
+      }
+    },
+    "timestamp": "2024-10-30T18:34:21.835609940Z",
+    "severity": "NOTICE",
+    "logName": "projects/artifacttest/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-10-30T18:34:22.911548283Z"
+  }
+]
